@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    padding: 40px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #eaeff1;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(26, 25, 25, 0.87);
+    margin-bottom: 40px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #4e73df;
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.4);
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+form button {
+    background-color: #4e73df;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #2e59d9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #4e73df;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #f8f9fc;
+}
+
+/* Action Buttons */
+td button {
+    margin: 3px;
+}
+
+td button:first-child {
+    background-color: #1cc88a;
+    color: white;
+}
+
+td button:first-child:hover {
+    background-color: #17a673;
+}
+
+td button:last-child {
+    background-color: #e74a3b;
+    color: white;
+}
+
+td button:last-child:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        font-size: 12px;
+    }
+}
